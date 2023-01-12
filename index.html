@@ -39,26 +39,47 @@
                 <p class="header__city">Ростов-на-дону</p>
                 <div>
                     <ul class="header__nav">
-                        <li class="header__nav-item"><a class="header__nav-link" href="#" target="_blank">матчи
-                                <img class="header__nav-icon" src="./img/Header/arrow.svg" alt="Arrow" />
+                        <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="#"
+                                target="_blank">матчи
+                                <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L4.76923 5L1 1" />
+                                </svg>
                             </a></li>
                         <li class="header__nav-item"><a class="header__nav-link" href="#" target="_blank">медиа
-                                <img class="header__nav-icon" src="./img/Header/arrow.svg" alt="Arrow" />
+                                <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L4.76923 5L1 1" />
+                                </svg>
                             </a></li>
                         <li class="header__nav-item"><a class="header__nav-link" href="#" target="_blank">команда
-                                <img class="header__nav-icon" src="./img/Header/arrow.svg" alt="Arrow" />
+                                <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L4.76923 5L1 1" />
+                                </svg>
                             </a>
                         </li>
                         <li class="header__nav-item"><a class="header__nav-link" href="#" target="_blank">клуб
-                                <img class="header__nav-icon" src="./img/Header/arrow.svg" alt="Arrow" />
+                                <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L4.76923 5L1 1" />
+                                </svg>
                             </a>
                         </li>
                         <li class="header__nav-item"><a class="header__nav-link" href="#" target="_blank">история
-                                <img class="header__nav-icon" src="./img/Header/arrow.svg" alt="Arrow" />
+                                <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L4.76923 5L1 1" />
+                                </svg>
                             </a>
                         </li>
                         <li class="header__nav-item"><a class="header__nav-link" href="#" target="_blank">болельщикам
-                                <img class="header__nav-icon" src="./img/Header/arrow.svg" alt="Arrow" /></a></li>
+                                <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L4.76923 5L1 1" />
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                     <form class="header__form">
                         <input class="header__form-input" type="text" placeholder="Искать здесь...">
@@ -69,12 +90,102 @@
         </div>
     </header>
 
-    <section class="start-page">
-        <div class="start-page__left"></div>
-    </section>
-
     <!--Main-->
     <main>
+
+        <!--StartPage-->
+        <section class="start-page">
+            <div class="start-page__left"></div>
+            <div class="container">
+                <div class="start-page__statistic card">
+
+                </div>
+                <div class="start-page__matches">
+                    <div class="start-page__matches-next card"></div>
+                    <div class="start-page__matches-timetable card"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--Swiper-->
+        <section class="swiper">
+            <div class="container">
+                <img class="swiper__img" src="./img/Swiper/img1.png" alt="Картинка" />
+            </div>
+        </section>
+
+        <!--Tickets-->
+        <section class="tickets">
+            <div class="container">
+                <div class="tickets__text">
+                    <p>билеты</p>
+                    <p>на ближайший матч</p>
+                </div>
+                <img class="tickets__kassir" src="./img/Tickets/kassir.png" alt="Кассир">
+                <a href="#" class="button">купить
+                    <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M28.6396 4.4412C28.8349 4.24594 28.8349 3.92936 28.6396 3.73409L25.4576 0.552113C25.2624 0.35685 24.9458 0.35685 24.7505 0.552113C24.5553 0.747375 24.5553 1.06396 24.7505 1.25922L27.579 4.08765L24.7505 6.91607C24.5553 7.11134 24.5553 7.42792 24.7505 7.62318C24.9458 7.81844 25.2624 7.81844 25.4576 7.62318L28.6396 4.4412ZM0.571777 4.58765H28.2861V3.58765H0.571777V4.58765Z"
+                            fill="white" />
+                    </svg>
+                </a>
+            </div>
+            <img class="tickets__ball" src="./img/Tickets/ball.svg" alt="Мяч" />
+        </section>
+
+        <section class="statistics">
+            <div class="container">
+                <div class="statistics__players">
+                    <div class="statistics__content">
+                        <img src="./img/Statistics/players.svg" alt="Игроки"/>
+                        <p class="title">статистика игроков</p>
+                    </div>
+                    <div class="statistics__items">
+                        <div class="statistics__card">
+                            <p class="statistics__card-best">лучший нападающий</p>
+                            <div class="statistics__card-result">
+                                <p>5 голов</p>
+                                <p>12 игр</p>
+                            </div>
+                            <div class="statistics__card-img">
+                                <img src="./img/Statistics/player1.png" alt="Игрок">
+                                <div class="statistics__card-number">93</div>
+                            </div>
+                            <p class="statistics__card-name">Илья <span>Кожухарь</span></p>
+                        </div>
+                        <div class="statistics__card">
+                            <p class="statistics__card-best">лучший полузащитник</p>
+                            <div class="statistics__card-result">
+                                <p>5 голов</p>
+                                <p>12 игр</p>
+                            </div>
+                            <div class="statistics__card-img">
+                                <img src="./img/Statistics/player2.png" alt="Игрок">
+                                <div class="statistics__card-number">20</div>
+                            </div>
+                            <p class="statistics__card-name">Сергей <span>Гаранжа</span></p>
+                        </div>
+                        <div class="statistics__card">
+                            <p class="statistics__card-best">лучший игрокматча</p>
+                            <p class="statistics__card-team">ска-черноморец</p>
+                            <div class="statistics__card-img">
+                                <img src="./img/Statistics/player1.png" alt="Игрок">
+                                <div class="statistics__card-number">93</div>
+                            </div>
+                            <p class="statistics__card-name">Илья <span>Кожухарь</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="statistics__season">
+                    <div class="statistics__content">
+                        <img src="./img/Statistics/ball.svg" alt="Игроки"/>
+                        <p class="title">статистика сезона</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!--Footer-->
