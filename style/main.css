@@ -249,7 +249,6 @@ body {
   background-image: url("../img/Social/youtube.svg");
 }
 
-
 /*Button*/
 .button {
   display: inline-block;
@@ -275,6 +274,22 @@ body {
 .button:hover,
 .button:active {
   background-color: #9a0000;
+}
+
+.button--light {
+  background-color: var(--whiteColor);
+  color: var(--redColor);
+  padding: 14px 22px 13px 24px;
+}
+
+.button--light:hover,
+.button--light:active {
+  background-color: var(--redColor);
+  color: var(--darkBlueColor);
+}
+
+.button--light .button__arrow {
+  stroke: currentColor;
 }
 
 /*Title*/
@@ -388,6 +403,97 @@ body {
   top: -100px;
   right: 0;
   filter: drop-shadow(-18px 31px 68px rgba(0, 0, 0, 0.2));
+}
+
+/*News*/
+.news {
+  height: 704px;
+  padding-top: 112px;
+  background-image: url("../img/News/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news__wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.news__carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.news__carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+.news__content {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.news__card {
+  width: 289px;
+  height: 396px;
+  background: #F4F4F4;
+  border-radius: 5px;
+}
+
+.news__link, .news__link-news {
+  color: var(--darkBlueColor);
+  text-transform: uppercase;
+}
+
+.news__card div {
+  padding: 0 25px 0 29px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.news__date {
+  padding: 32px 0px 23px 29px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--darkBlueColor);
+}
+
+.news__link {
+  padding-left: 29px;
+  display: block;
+  max-width: 209px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.news__link-news {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.news__buttons {
+  padding-top: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.news__buttons div {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 
 /*Statistics*/
@@ -659,7 +765,7 @@ body {
   padding: 0 35px 18px 24px;
 }
 
-.information__card > a::before {
+.information__card>a::before {
   position: absolute;
   content: '';
   inset: 0;
@@ -759,7 +865,7 @@ footer .social a::before {
   opacity: 0.4;
 }
 
-.footer__list > li {
+.footer__list>li {
   margin-top: 5px;
 }
 
