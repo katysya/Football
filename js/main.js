@@ -1,13 +1,27 @@
 /* Swiper*/
-let swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
+let swiper1 = new Swiper(".Swiper1", {
+    speed: 500,
+    slidesPerView: 1,
+    spaceBetween: 200,
     loop: true,
-    autoplay:true,
+    autoplay: true,
     pagination: {
         el: ".swiper-pagination",
     },
     mousewhell: true,
     keyboard: true,
+});
+
+/* Swiper*/
+let swiper2 = new Swiper(".Swiper2", {
+    slidesPerView: 3,
+    spaceBetween: 200,
+    loop: true,
+    mousewhell: true,
+    keyboard: true,
+    navigation: {
+        prevEl: '.swiper-button-prev',
+    },
 });
 
 /*Carousel News*/
