@@ -456,12 +456,12 @@ body {
   padding: 23px 0 28px 0;
 
   border-collapse: collapse;
-	border-spacing: 0;
-	border: 0;
+  border-spacing: 0;
+  border: 0;
 }
 
 .start-page__statistic-table th {
-  padding:23px 0 22px 0;
+  padding: 23px 0 22px 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -477,7 +477,7 @@ body {
   height: 25px;
 }
 
-.start-page__statistic-table td{
+.start-page__statistic-table td {
   font-size: 12px;
   border: 0px;
 }
@@ -586,8 +586,37 @@ body {
   background-color: var(--darkBlueColor);
 }
 
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .swiper__img {
   border-radius: 10px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 45px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 11px !important;
+  height: 11px !important;
+  display: inline-block;
+  border-radius: 0 !important;
+  background: var(--whiteColor) !important;
+  opacity: 1 !important;
+  margin: 0 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: var(--redColor)!important;
 }
 
 /*Tickets*/

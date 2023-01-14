@@ -1,3 +1,14 @@
+/* Swiper*/
+let swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    loop: true,
+    autoplay:true,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    mousewhell: true,
+    keyboard: true,
+});
 
 /*Carousel News*/
 
