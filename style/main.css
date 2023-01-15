@@ -23,6 +23,8 @@
   --maxWidthContainer3: 800px;
   --maxWidthContainer4: 700px;
   --maxWidthContainer5: 500px;
+  --maxWidthContainer5: 450px;
+  --maxWidthContainer6: 360px;
 }
 
 body {
@@ -839,6 +841,7 @@ body {
   left: -240px;
 }
 
+
 .team .swiper-slide-next img {
   position: relative;
   left: 105px;
@@ -1589,7 +1592,7 @@ footer .social a::before {
   }
 
   .header__form {
-    width: 300px;
+    width: 200px;
     margin-top: 5px;
     background-color: whitesmoke;
     border-radius: 5px;
@@ -1909,4 +1912,273 @@ footer .social a::before {
   .container {
     width: 500px;
   }
+
+  .header__logo {
+    top: 20px;
+  }
+
+  .header__top .container {
+    align-items: flex-end;
+  }
+
+  .header__links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header__form {
+    width: 200px;
+  }
+
+  .start-page__statistic-table th:nth-child(1),
+  .start-page__statistic-table td:nth-child(1) {
+    padding-left: 20px;
+    width: 170px;
+    height: 25px;
+  }
+
+  /*Swiper*/
+  .swiper {
+    height: 140px;
+  }
+
+  /*Title*/
+  .title {
+    font-size: 20px;
+  }
+
+  /*Tickets*/
+  .tickets__text p:last-child {
+    font-size: 14px;
+  }
+
+  .tickets__kassir {
+    width: 125px;
+  }
+
+  /*Team*/
+  .team__list-link {
+    font-size: 14px;
+  }
+
+  .team .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 100px;
+  }
+
+  .swiper__data-left p:nth-child(2) {
+    font-size: 39px;
+    line-height: 39px;
+  }
+
+  .swiper__data-name {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 3px;
+  }
+
+  .team .swiper__data {
+    padding-top: 15px;
+  }
+
+  /*Statistics*/
+  .statistics__card-img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .statistics__card-img img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .statistics__card-number {
+    padding-top: 12px;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .statistics__card-result {
+    gap: 12px;
+  }
+
+  .statistics__block p:nth-child(1) {
+    font-size: 30px;
+  }
+
+  /*Footer*/
+  .footer__references {
+    padding: 45px 0 0 100px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    width: var(--maxWidthContainer5);
+  }
+
+  .header__links {
+    display: none;
+  }
+
+  .header__form {
+    width: 160px;
+  }
+
+  .start-page__statistic-table th:nth-child(1),
+  .start-page__statistic-table td:nth-child(1) {
+    padding-left: 5px;
+    width: 140px;
+  }
+
+  .start-page__statistic-table th {
+    font-size: 8px;
+    text-align: center;
+  }
+
+  /*Info*/
+  .info {
+    gap: 0px;
+  }
+
+  .swiper {
+    height: 100px;
+  }
+
+  .button {
+    padding: 14px 5px 13px 7px;
+  }
+
+  .button__arrow {
+    margin-left: 0px;
+  }
+
+  .start-page__timetable .info {
+    gap: 3px;
+  }
+
+  .start-page__timetable .date {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .tickets .container {
+    padding: 25px 0 25px 0;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  /*News*/
+  .news__card {
+    width: 250px;
+    height: 370px;
+  }
+
+  /*Team*/
+  .team__list {
+    flex-direction: column;
+    min-width: 300px;
+  }
+
+  .team__list-link::after {
+    width: 0;
+    height: 0;
+  }
+
+  .team .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 65px;
+  }
+
+  .swiper__data-left p:nth-child(3) {
+    display: none;
+  }
+
+  .team .swiper {
+    height: 200px;
+  }
+
+  .team .swiper img {
+    min-width: 190px;
+  }
+
+  .team .swiper__data-parameters {
+    display: none;
+  }
+
+  .team .social {
+    display: none;
+  }
+
+  .team .swiper__data,
+  .team .swiper__data-parameters {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .team .swiper-slide-next img {
+    left: 80px;
+  }
+
+  .swiper__data-left p:nth-child(2) {
+    font-size: 39px;
+    line-height: 39px;
+  }
+
+  .team .swiper__data {
+    left: 40px;
+  }
+
+  .statistics {
+    background-image: none;
+  }
+
+  .statistics .container {
+    gap: 100px;
+  }
+
+  .statistics__items {
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+  }
+
+  .information__partners {
+    padding: 40px 0 100px 0;
+    gap: 40px;
+  }
+
+  .information__partners img {
+    width: 35%;
+  }
+
+  .footer__top {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .container {
+    width: var(--maxWidthContainer6);
+  }
+
+  .header__block .container {
+    flex-direction: column;
+  }
+
+  .start-page__statistic-table th {
+    font-size: 7px;
+  }
+
+  .news__date {
+    padding: 10px 0px 16px 15px;
+  }
+
+  .news__link {
+    padding-left: 15px;
+  }
+
 }
