@@ -15,12 +15,22 @@ let swiper1 = new Swiper(".Swiper1", {
 /* Swiper Team*/
 let swiper2 = new Swiper(".Swiper2", {
     slidesPerView: 3,
+    speed: 500,
     spaceBetween: 200,
     loop: true,
     mousewhell: true,
     navigation: {
         prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+        320: {
+            spaceBetween: 50
+        },
+        900: {
+            slidesPerView: 3,
+            spaceBetween: 200
+        }
+    }
 });
 
 /* Swiper History*/
@@ -31,7 +41,7 @@ let swiper3 = new Swiper(".Swiper3", {
     mousewhell: true,
     keyboard: true,
     navigation: {
-        prevEl: '.swiper-button-prev',
+
     },
 });
 

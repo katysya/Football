@@ -18,6 +18,11 @@
 
   /*Width*/
   --maxWidthContainer: 1440px;
+  --maxWidthContainer1: 1200px;
+  --maxWidthContainer2: 1000px;
+  --maxWidthContainer3: 800px;
+  --maxWidthContainer4: 700px;
+  --maxWidthContainer5: 500px;
 }
 
 body {
@@ -84,11 +89,10 @@ body {
   flex-direction: row;
 }
 
-.header__block div {
+.header__block .header__menu {
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -136,6 +140,7 @@ body {
   position: relative;
   width: 200px;
   height: 24px;
+  cursor: pointer;
 }
 
 .header__form-input {
@@ -655,6 +660,7 @@ body {
   position: absolute;
   top: -100px;
   right: 0;
+  z-index: 10;
   filter: drop-shadow(-18px 31px 68px rgba(0, 0, 0, 0.2));
 }
 
@@ -724,6 +730,7 @@ body {
   padding-left: 29px;
   display: block;
   max-width: 209px;
+  min-height: 90px;
   margin-bottom: 15px;
   font-weight: 500;
   font-size: 16px;
@@ -1399,4 +1406,507 @@ footer .social a::before {
   font-weight: 700;
   font-size: 13px;
   margin-bottom: 12px;
+}
+
+@media (max-width: 1480px) {
+
+  .container {
+    max-width: var(--maxWidthContainer1);
+  }
+
+  /*Header*/
+  .header__nav {
+    gap: 20px;
+  }
+
+  /*Start Page*/
+  .start-page__statistic-name {
+    padding: 20px 15px;
+  }
+
+  .info {
+    gap: 20px;
+  }
+
+  .button--light {
+    padding: 14px 10px 13px 10px;
+  }
+
+  .button--light .button__arrow {
+    display: none;
+  }
+
+  .button {
+    padding: 14px 15px 13px 20px;
+  }
+
+  .start-page__next-top {
+    margin-bottom: 15px;
+  }
+
+  .start-page__timetable .date {
+    padding: 21px 20px 22px 20px;
+  }
+
+  .start-page__timetable .info {
+    gap: 15px;
+  }
+
+  .start-page__timetable .date p:nth-child(1) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  /*Swiper*/
+
+  .swiper {
+    height: 340px;
+  }
+
+  .tickets__ball {
+    width: 140px;
+  }
+
+  /*Team*/
+  .team .swiper {
+    width: 115%;
+    left: -240px;
+  }
+
+  .team .swiper__data {
+    padding-top: 15px;
+  }
+
+  /*History*/
+  .history {
+    background-size: inherit;
+  }
+
+  .history .swiper-slide {
+    height: 280px;
+  }
+
+  /*Statistics*/
+  .statistics {
+    background-size: unset;
+  }
+
+  .statistics__players {
+    width: 75%;
+  }
+
+  .statistics__season {
+    width: 25%;
+    padding-left: 50px;
+  }
+
+  .statistics__circle {
+    display: none;
+  }
+
+  /*Shop*/
+  .shop__card {
+    width: 273px;
+    padding: 20px 15px 20px 15px;
+  }
+
+  .shop__order .button {
+    padding: 13px 13px 13px 13px;
+  }
+
+  .shop__order .button__arrow {
+    display: none;
+  }
+
+  /*Information*/
+  .information__social {
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+  }
+
+  .information__card {
+    padding: 0 35px 18px 45px;
+    width: 390px;
+  }
+
+  /*Footer*/
+  .footer__references {
+    flex-wrap: wrap;
+    gap: 130px;
+    justify-content: center;
+  }
+
+  .footer__list {
+    min-width: 172px;
+  }
+
+  .footer__list .footer__list-name {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .footer__list>li {
+    margin-top: 10px;
+  }
+
+  .footer__list a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1250px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    max-width: var(--maxWidthContainer2);
+  }
+
+  /*Header*/
+  .header__fka {
+    margin: 5px 85px 0 75px;
+  }
+
+  .header__city {
+    font-size: 17px;
+    margin: 0 20px 0 75px;
+  }
+
+  .social>li {
+    margin-right: 30px;
+  }
+
+  .header__block {
+    padding: 18px 0 10px 0;
+  }
+
+  .header__block .header__menu {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .header__form {
+    width: 300px;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+  }
+
+  /*Start Page*/
+  .start-page .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .start-page__statistic {
+    max-width: 100%;
+  }
+
+  .start-page__matches {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  /*Swiper*/
+  .swiper {
+    height: 260px;
+  }
+
+  /*Team*/
+  .team .swiper__data,
+  .team .swiper__data-parameters {
+    gap: 15px;
+  }
+
+  .swiper__data-left p:nth-child(1) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .swiper__data-left p:nth-child(2) {
+    font-size: 80px;
+    line-height: 78px;
+  }
+
+  .swiper__data-name {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 3px;
+  }
+
+  .swiper__data-parameters {
+    gap: 38px;
+    color: #9195B8;
+    margin-bottom: 10px;
+  }
+
+  /*History*/
+  .history .swiper-slide {
+    height: 240px;
+  }
+
+  /*Statistics*/
+  .statistics .container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 0 20px 0;
+  }
+
+  .statistics__items {
+    padding-top: 30px;
+  }
+
+  .statistics__players {
+    width: 100%;
+  }
+
+  .statistics__card-result {
+    margin: 5px 0 13px 0;
+  }
+
+  .statistics__card-team {
+    margin: 10px 0 5px 0;
+  }
+
+  .statistics__card-img {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 20px;
+  }
+
+  .statistics__card-img img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .statistics__season {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .statistics__content-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .statistics__block {
+    margin-top: 0px;
+  }
+
+  .shop__items {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 0 75px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1050px) {
+
+  .container {
+    max-width: var(--maxWidthContainer3);
+  }
+
+  /*Header*/
+  .header__nav {
+    display: none;
+  }
+
+  .header__block {
+    padding: 10px 0 10px 0;
+  }
+
+  .start-page__matches {
+    flex-direction: column;
+  }
+
+  .info {
+    gap: 45px;
+  }
+
+  .start-page__buttons {
+    justify-content: space-around;
+  }
+
+  .start-page__timetable .info {
+    gap: 45px;
+  }
+
+  .swiper {
+    height: 215px;
+  }
+
+  /*Tickets*/
+
+  .tickets .container {
+    max-width: 800px;
+  }
+
+  .tickets__text p:last-child {
+    font-size: 20px;
+  }
+
+  /*Team*/
+  .team {
+    padding-top: 25px;
+  }
+
+  .team__block {
+    flex-direction: column;
+  }
+
+  .team__list {
+    padding-top: 20px;
+    margin-left: 0;
+  }
+
+  .team .swiper {
+    width: 130%;
+    left: -200px;
+  }
+
+  .swiper__data-left p:nth-child(1) {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .swiper__data-left p:nth-child(2) {
+    font-size: 55px;
+    line-height: 51px;
+  }
+
+  .swiper__data-left p:nth-child(3) {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .swiper__data-name {
+    font-size: 19px;
+    line-height: 19px;
+    margin-bottom: 3px;
+  }
+
+  .team .swiper__data {
+    padding-top: 30px;
+  }
+
+  /*History*/
+
+  .history {
+    padding-top: 20px;
+  }
+
+  .history .swiper-slide {
+    height: 200px;
+  }
+
+  /*Statistics*/
+
+  .statistics__card {
+    max-width: 267px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .statistics__block p:nth-child(1) {
+    font-size: 45px;
+  }
+
+  .information__social {
+    gap: 12px;
+  }
+
+  /*Footer*/
+  .footer__references {
+    gap: 60px;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  /*Header*/
+  .container {
+    width: var(--maxWidthContainer4);
+  }
+
+  .social>li {
+    margin-right: 10px;
+  }
+
+  /*Swiper*/
+  .swiper {
+    height: 185px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 10px !important;
+  }
+
+  /*Tickets*/
+  .tickets__ball {
+    width: 100px;
+    top: -60px;
+  }
+
+  .tickets__kassir {
+    width: 150px;
+  }
+
+  /*Team*/
+  .team__list {
+    min-width: 500px;
+    max-width: 600px;
+  }
+
+  .team .swiper {
+    width: 100%;
+    left: 0;
+  }
+
+  .team .swiper__data {
+    left: 95px;
+  }
+
+  .team .swiper-slide-next {
+    margin-right: 245px !important;
+  }
+
+  .team .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 145px;
+  }
+
+  /*Statistics*/
+  .statistics__card-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .statistics__card-img img {
+    width: 130px;
+    height: 130px;
+  }
+
+  /*Shop*/
+  .shop__items {
+    padding: 0 40px;
+  }
+
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 500px;
+  }
 }
