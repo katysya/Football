@@ -12,10 +12,21 @@ let swiper1 = new Swiper(".Swiper1", {
     keyboard: true,
 });
 
-/* Swiper*/
+/* Swiper Team*/
 let swiper2 = new Swiper(".Swiper2", {
     slidesPerView: 3,
     spaceBetween: 200,
+    loop: true,
+    mousewhell: true,
+    navigation: {
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+/* Swiper History*/
+let swiper3 = new Swiper(".Swiper3", {
+    slidesPerView: 1,
+    spaceBetween: 190,
     loop: true,
     mousewhell: true,
     keyboard: true,
