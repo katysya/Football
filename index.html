@@ -40,49 +40,54 @@
             <div class="container">
                 <p class="header__city">Ростов-на-дону</p>
                 <div class="header__menu">
-                    <ul class="header__nav">
-                        <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="#"
-                                target="_blank">матчи
-                                <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8 1L4.76923 5L1 1" />
-                                </svg>
-                            </a></li>
-                        <li class="header__nav-item"><a class="header__nav-link" href="#" target="_blank">медиа
-                                <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8 1L4.76923 5L1 1" />
-                                </svg>
-                            </a></li>
-                        <li class="header__nav-item"><a class="header__nav-link" href="#" target="_blank">команда
-                                <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8 1L4.76923 5L1 1" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="header__nav-item"><a class="header__nav-link" href="#" target="_blank">клуб
-                                <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8 1L4.76923 5L1 1" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="header__nav-item"><a class="header__nav-link" href="#" target="_blank">история
-                                <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8 1L4.76923 5L1 1" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="header__nav-item"><a class="header__nav-link" href="#" target="_blank">болельщикам
-                                <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8 1L4.76923 5L1 1" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                    <nav class="nav">
+                        <ul class="header__nav">
+                            <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="#matches"
+                                    >матчи
+                                    <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 1L4.76923 5L1 1" />
+                                    </svg>
+                                </a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#news">медиа
+                                    <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 1L4.76923 5L1 1" />
+                                    </svg>
+                                </a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#team" target="_blank">команда
+                                    <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 1L4.76923 5L1 1" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#statistics" target="_blank">клуб
+                                    <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 1L4.76923 5L1 1" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#history" target="_blank">история
+                                    <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 1L4.76923 5L1 1" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#footer" target="_blank">болельщикам
+                                    <svg class="header__nav-icon" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 1L4.76923 5L1 1" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="burger">
+                        <span class="burger__line"></span>
+                    </button>
                     <form class="header__form">
                         <input class="header__form-input" type="text" placeholder="Искать здесь...">
                         <button class="header__form-submit" type="submit"></button>
@@ -95,15 +100,15 @@
     <!--Main-->
     <main>
         <!--StartPage-->
-        <section class="start-page">
+        <section class="start-page" id="matches">
             <div class="start-page__left"></div>
             <div class="container">
                 <div class="start-page__statistic">
                     <div class="start-page__statistic-top">
-                        <a class="start-page__statistic-name start-page__statistic-name--active" href="#">турнирная
-                            таблица</a>
-                        <a class="start-page__statistic-name" href="#">статистика игроков</a>
-                        <a class="start-page__statistic-name" href="#">статистика сезона</a>
+                        <button class="start-page__statistic-name start-page__statistic-name--active" href="#">турнирная
+                            таблица</button>
+                        <button class="start-page__statistic-name" href="#">статистика игроков</button>
+                        <button class="start-page__statistic-name" href="#">статистика сезона</button>
                     </div>
                     <div class="start-page__statistic-team">
                         <a class="start-page__statistic-link" href="#">Бетсити-Кубок России</a>
@@ -417,7 +422,7 @@
         </section>
 
         <!--Tickets-->
-        <section class="tickets">
+        <section class="tickets" id="tickets">
             <div class="container">
                 <div class="tickets__text">
                     <h1 class="title">билеты</h1>
@@ -437,7 +442,7 @@
         </section>
 
         <!--News-->
-        <section class="news">
+        <section class="news" id="news">
             <div class="container">
                 <div class="news__wrapper">
                     <div class="news__carousel">
@@ -448,7 +453,7 @@
                                 <a class="news__link" href="#">Сегодня свой день рождения празднует артём микаелян!</a>
                                 <div>
                                     <a class="news__link-news" href="#">Новости</a>
-                                    <a href="#" class="button button--light">купить
+                                    <a href="#" class="button button--light">читать
                                         <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -465,7 +470,7 @@
                                     работать...</a>
                                 <div>
                                     <a class="news__link-news" href="#">Новости</a>
-                                    <a href="#" class="button button--light">купить
+                                    <a href="#" class="button button--light">читать
                                         <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -481,7 +486,89 @@
                                 <a class="news__link" href="#">«Инсайдеры» про ростовский СКА</a>
                                 <div>
                                     <a class="news__link-news" href="#">Новости</a>
-                                    <a href="#" class="button button--light">купить
+                                    <a href="#" class="button button--light">читать
+                                        <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M28.6396 4.4412C28.8349 4.24594 28.8349 3.92936 28.6396 3.73409L25.4576 0.552113C25.2624 0.35685 24.9458 0.35685 24.7505 0.552113C24.5553 0.747375 24.5553 1.06396 24.7505 1.25922L27.579 4.08765L24.7505 6.91607C24.5553 7.11134 24.5553 7.42792 24.7505 7.62318C24.9458 7.81844 25.2624 7.81844 25.4576 7.62318L28.6396 4.4412ZM0.571777 4.58765H28.2861V3.58765H0.571777V4.58765Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news__card">
+                                <img class="news__img" src="./img/News/news4.png" alt="Новости">
+                                <p class="news__date">06.12.2020</p>
+                                <a class="news__link" href="#">Андрей Демченко: «Показали, что мы СКА Ростов!»</a>
+                                <div>
+                                    <a class="news__link-news" href="#">Новости</a>
+                                    <a href="#" class="button button--light">читать
+                                        <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M28.6396 4.4412C28.8349 4.24594 28.8349 3.92936 28.6396 3.73409L25.4576 0.552113C25.2624 0.35685 24.9458 0.35685 24.7505 0.552113C24.5553 0.747375 24.5553 1.06396 24.7505 1.25922L27.579 4.08765L24.7505 6.91607C24.5553 7.11134 24.5553 7.42792 24.7505 7.62318C24.9458 7.81844 25.2624 7.81844 25.4576 7.62318L28.6396 4.4412ZM0.571777 4.58765H28.2861V3.58765H0.571777V4.58765Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news__card">
+                                <img class="news__img" src="./img/News/news2.png" alt="Новости">
+                                <p class="news__date">06.12.2020</p>
+                                <a class="news__link" href="#">Владимир Усин: «С хорошим настроением уходим в
+                                    отпуск!»</a>
+                                <div>
+                                    <a class="news__link-news" href="#">Новости</a>
+                                    <a href="#" class="button button--light">читать
+                                        <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M28.6396 4.4412C28.8349 4.24594 28.8349 3.92936 28.6396 3.73409L25.4576 0.552113C25.2624 0.35685 24.9458 0.35685 24.7505 0.552113C24.5553 0.747375 24.5553 1.06396 24.7505 1.25922L27.579 4.08765L24.7505 6.91607C24.5553 7.11134 24.5553 7.42792 24.7505 7.62318C24.9458 7.81844 25.2624 7.81844 25.4576 7.62318L28.6396 4.4412ZM0.571777 4.58765H28.2861V3.58765H0.571777V4.58765Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news__card">
+                                <img class="news__img" src="./img/News/news1.png" alt="Новости">
+                                <p class="news__date">06.12.2020</p>
+                                <a class="news__link" href="#">Сегодня свой день рождения празднует артём микаелян!</a>
+                                <div>
+                                    <a class="news__link-news" href="#">Новости</a>
+                                    <a href="#" class="button button--light">читать
+                                        <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M28.6396 4.4412C28.8349 4.24594 28.8349 3.92936 28.6396 3.73409L25.4576 0.552113C25.2624 0.35685 24.9458 0.35685 24.7505 0.552113C24.5553 0.747375 24.5553 1.06396 24.7505 1.25922L27.579 4.08765L24.7505 6.91607C24.5553 7.11134 24.5553 7.42792 24.7505 7.62318C24.9458 7.81844 25.2624 7.81844 25.4576 7.62318L28.6396 4.4412ZM0.571777 4.58765H28.2861V3.58765H0.571777V4.58765Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news__card">
+                                <img class="news__img" src="./img/News/news2.png" alt="Новости">
+                                <p class="news__date">06.12.2020</p>
+                                <a class="news__link" href="#">Сергей Городничук: «Для повышения в классе нам нужно
+                                    работать...</a>
+                                <div>
+                                    <a class="news__link-news" href="#">Новости</a>
+                                    <a href="#" class="button button--light">читать
+                                        <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M28.6396 4.4412C28.8349 4.24594 28.8349 3.92936 28.6396 3.73409L25.4576 0.552113C25.2624 0.35685 24.9458 0.35685 24.7505 0.552113C24.5553 0.747375 24.5553 1.06396 24.7505 1.25922L27.579 4.08765L24.7505 6.91607C24.5553 7.11134 24.5553 7.42792 24.7505 7.62318C24.9458 7.81844 25.2624 7.81844 25.4576 7.62318L28.6396 4.4412ZM0.571777 4.58765H28.2861V3.58765H0.571777V4.58765Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news__card">
+                                <img class="news__img" src="./img/News/news3.png" alt="Новости">
+                                <p class="news__date">06.12.2020</p>
+                                <a class="news__link" href="#">«Инсайдеры» про ростовский СКА</a>
+                                <div>
+                                    <a class="news__link-news" href="#">Новости</a>
+                                    <a href="#" class="button button--light">читать
                                         <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -508,13 +595,13 @@
                                 </div>
                             </div>
                             <div class="news__card">
-                                <img class="news__img" src="./img/News/news2.png" alt="Новости">
+                                <img class="news__img" src="./img/News/news3.png" alt="Новости">
                                 <p class="news__date">06.12.2020</p>
                                 <a class="news__link" href="#">Владимир Усин: «С хорошим настроением уходим в
                                     отпуск!»</a>
                                 <div>
                                     <a class="news__link-news" href="#">Новости</a>
-                                    <a href="#" class="button button--light">купить
+                                    <a href="#" class="button button--light">читать
                                         <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -530,7 +617,7 @@
                                 <a class="news__link" href="#">Сегодня свой день рождения празднует артём микаелян!</a>
                                 <div>
                                     <a class="news__link-news" href="#">Новости</a>
-                                    <a href="#" class="button button--light">купить
+                                    <a href="#" class="button button--light">читать
                                         <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -547,89 +634,7 @@
                                     работать...</a>
                                 <div>
                                     <a class="news__link-news" href="#">Новости</a>
-                                    <a href="#" class="button button--light">купить
-                                        <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M28.6396 4.4412C28.8349 4.24594 28.8349 3.92936 28.6396 3.73409L25.4576 0.552113C25.2624 0.35685 24.9458 0.35685 24.7505 0.552113C24.5553 0.747375 24.5553 1.06396 24.7505 1.25922L27.579 4.08765L24.7505 6.91607C24.5553 7.11134 24.5553 7.42792 24.7505 7.62318C24.9458 7.81844 25.2624 7.81844 25.4576 7.62318L28.6396 4.4412ZM0.571777 4.58765H28.2861V3.58765H0.571777V4.58765Z"
-                                                fill="white" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="news__card">
-                                <img class="news__img" src="./img/News/news3.png" alt="Новости">
-                                <p class="news__date">06.12.2020</p>
-                                <a class="news__link" href="#">«Инсайдеры» про ростовский СКА</a>
-                                <div>
-                                    <a class="news__link-news" href="#">Новости</a>
-                                    <a href="#" class="button button--light">купить
-                                        <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M28.6396 4.4412C28.8349 4.24594 28.8349 3.92936 28.6396 3.73409L25.4576 0.552113C25.2624 0.35685 24.9458 0.35685 24.7505 0.552113C24.5553 0.747375 24.5553 1.06396 24.7505 1.25922L27.579 4.08765L24.7505 6.91607C24.5553 7.11134 24.5553 7.42792 24.7505 7.62318C24.9458 7.81844 25.2624 7.81844 25.4576 7.62318L28.6396 4.4412ZM0.571777 4.58765H28.2861V3.58765H0.571777V4.58765Z"
-                                                fill="white" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="news__card">
-                                <img class="news__img" src="./img/News/news4.png" alt="Новости">
-                                <p class="news__date">06.12.2020</p>
-                                <a class="news__link" href="#">Андрей Демченко: «Показали, что мы СКА Ростов!»</a>
-                                <div>
-                                    <a class="news__link-news" href="#">Новости</a>
-                                    <a href="#" class="button button--light">купить
-                                        <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M28.6396 4.4412C28.8349 4.24594 28.8349 3.92936 28.6396 3.73409L25.4576 0.552113C25.2624 0.35685 24.9458 0.35685 24.7505 0.552113C24.5553 0.747375 24.5553 1.06396 24.7505 1.25922L27.579 4.08765L24.7505 6.91607C24.5553 7.11134 24.5553 7.42792 24.7505 7.62318C24.9458 7.81844 25.2624 7.81844 25.4576 7.62318L28.6396 4.4412ZM0.571777 4.58765H28.2861V3.58765H0.571777V4.58765Z"
-                                                fill="white" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="news__card">
-                                <img class="news__img" src="./img/News/news3.png" alt="Новости">
-                                <p class="news__date">06.12.2020</p>
-                                <a class="news__link" href="#">Владимир Усин: «С хорошим настроением уходим в
-                                    отпуск!»</a>
-                                <div>
-                                    <a class="news__link-news" href="#">Новости</a>
-                                    <a href="#" class="button button--light">купить
-                                        <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M28.6396 4.4412C28.8349 4.24594 28.8349 3.92936 28.6396 3.73409L25.4576 0.552113C25.2624 0.35685 24.9458 0.35685 24.7505 0.552113C24.5553 0.747375 24.5553 1.06396 24.7505 1.25922L27.579 4.08765L24.7505 6.91607C24.5553 7.11134 24.5553 7.42792 24.7505 7.62318C24.9458 7.81844 25.2624 7.81844 25.4576 7.62318L28.6396 4.4412ZM0.571777 4.58765H28.2861V3.58765H0.571777V4.58765Z"
-                                                fill="white" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="news__card">
-                                <img class="news__img" src="./img/News/news1.png" alt="Новости">
-                                <p class="news__date">06.12.2020</p>
-                                <a class="news__link" href="#">Сегодня свой день рождения празднует артём микаелян!</a>
-                                <div>
-                                    <a class="news__link-news" href="#">Новости</a>
-                                    <a href="#" class="button button--light">купить
-                                        <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M28.6396 4.4412C28.8349 4.24594 28.8349 3.92936 28.6396 3.73409L25.4576 0.552113C25.2624 0.35685 24.9458 0.35685 24.7505 0.552113C24.5553 0.747375 24.5553 1.06396 24.7505 1.25922L27.579 4.08765L24.7505 6.91607C24.5553 7.11134 24.5553 7.42792 24.7505 7.62318C24.9458 7.81844 25.2624 7.81844 25.4576 7.62318L28.6396 4.4412ZM0.571777 4.58765H28.2861V3.58765H0.571777V4.58765Z"
-                                                fill="white" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="news__card">
-                                <img class="news__img" src="./img/News/news2.png" alt="Новости">
-                                <p class="news__date">06.12.2020</p>
-                                <a class="news__link" href="#">Сергей Городничук: «Для повышения в классе нам нужно
-                                    работать...</a>
-                                <div>
-                                    <a class="news__link-news" href="#">Новости</a>
-                                    <a href="#" class="button button--light">купить
+                                    <a href="#" class="button button--light">читать
                                         <svg class="button__arrow" width="29" height="8" viewBox="0 0 29 8" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -676,7 +681,7 @@
         </section>
 
         <!--Team-->
-        <section class="team">
+        <section class="team" id="team">
             <div class="container">
                 <div class="team__block">
                     <h1 class="title">команда</h1>
@@ -776,10 +781,11 @@
                     </div>
                     <div class="swiper-button-prev"></div>
                 </div>
+            </div>
         </section>
 
         <!--History-->
-        <section class="history">
+        <section class="history" id="history">
             <div class="container">
                 <h1 class="title">история клуба</h1>
                 <div class="swiper Swiper3">
@@ -835,7 +841,7 @@
         </section>
 
         <!--Statistics-->
-        <section class="statistics">
+        <section class="statistics" id="statistics">
             <div class="container">
                 <div class="statistics__players">
                     <div class="statistics__content">
@@ -1040,7 +1046,7 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__top">
                 <div class="footer__title">
@@ -1058,14 +1064,14 @@
             <div class="footer__references">
                 <img class="footer__logo" src="./img/Logo/logo.svg" alt="Лого">
                 <ul class="footer__list">
-                    <li><a class="footer__list-name" href="#">матчи</a></li>
+                    <li><a class="footer__list-name" href="#matches">матчи</a></li>
                     <li><a class="footer__list-link" href="#">календарь</a></li>
                     <li><a class="footer__list-link" href="#">турнир</a></li>
                     <li><a class="footer__list-link" href="#">статистика</a></li>
                     <li><a class="footer__list-link" href="#">Рпл (ПФЛ)</a></li>
                 </ul>
                 <ul class="footer__list">
-                    <li><a class="footer__list-name" href="#">медиа</a></li>
+                    <li><a class="footer__list-name" href="#news">медиа</a></li>
                     <li><a class="footer__list-link" href="#">фото</a></li>
                     <li><a class="footer__list-link" href="#">видео</a></li>
                     <li><a class="footer__list-link" href="#">сми</a></li>
@@ -1073,13 +1079,13 @@
                     <li><a class="footer__list-link" href="#">программки</a></li>
                 </ul>
                 <ul class="footer__list">
-                    <li><a class="footer__list-name" href="#">команда</a></li>
+                    <li><a class="footer__list-name" href="#team">команда</a></li>
                     <li><a class="footer__list-link" href="#">тренеры</a></li>
                     <li><a class="footer__list-link" href="#">футболисты</a></li>
                     <li><a class="footer__list-link" href="#">персонал</a></li>
                 </ul>
                 <ul class="footer__list">
-                    <li><a class="footer__list-name" href="#">клуб</a></li>
+                    <li><a class="footer__list-name" href="#statistics">клуб</a></li>
                     <li><a class="footer__list-link" href="#">музей</a></li>
                     <li><a class="footer__list-link" href="#">руководство</a></li>
                     <li><a class="footer__list-link" href="#">контакты</a></li>
@@ -1087,14 +1093,14 @@
                     <li><a class="footer__list-link" href="#">эмблемы</a></li>
                 </ul>
                 <ul class="footer__list">
-                    <li><a class="footer__list-name" href="#">история</a></li>
+                    <li><a class="footer__list-name" href="#history">история</a></li>
                     <li><a class="footer__list-link" href="#">клуб стадион</a></li>
                     <li><a class="footer__list-link" href="#">легенды (люди)</a></li>
                     <li><a class="footer__list-link" href="#">капитаны</a></li>
                     <li><a class="footer__list-link" href="#">достижения</a></li>
                 </ul>
                 <ul class="footer__list">
-                    <li><a class="footer__list-name" href="#">болельщики</a></li>
+                    <li><a class="footer__list-name" href="#footer">болельщики</a></li>
                     <li><a class="footer__list-link" href="#">правила</a></li>
                     <li><a class="footer__list-link" href="#">трибуна</a></li>
                     <li><a class="footer__list-link" href="#">болельщикам гостей</a></li>
@@ -1108,34 +1114,3 @@
 </body>
 
 </html>
-
-<!--
-                            <div class="swiper-slide">
-                            <img src="./img/Team/player1.png" alt="Игрок">
-                            <div class="swiper__data">
-                                <div class="swiper__data-left">
-                                    <p>вратарь</p>
-                                    <p>23</p>
-                                    <p>23.04.1999</p>
-                                </div>
-                                <div class="swiper__data-right">
-                                    <p class="swiper__data-name">Вячеслав григорян</p>
-                                    <div class="swiper__data-parameters">
-                                        <div>
-                                            <p>вес</p>
-                                            <p>85 кг</p>
-                                        </div>
-                                        <div>
-                                            <p>рост</p>
-                                            <p>193 см</p>
-                                        </div>
-                                    </div>
-                                    <ul class="social">
-                                        <li><a class="social-fb" href="#" target="_blank"></a></li>
-                                        <li><a class="social-insta" href="#" target="_blank"></a></li>
-                                        <li><a class="social-vk" href="#" target="_blank"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
--->
