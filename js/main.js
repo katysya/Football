@@ -135,6 +135,7 @@ function showTabContent(i = 0) {
     console.log("сработал Show");
     tableTitles[i].classList.add('start-page__statistic-name--active');
     tableContent[i].style.display = 'block';
+    tableContent[i].style.layoutfixed = "fixed";
 
 }
 
@@ -145,8 +146,8 @@ table.addEventListener('click', function(event) {
     if(event.target && event.target.classList.contains('start-page__statistic-name')){
         tableTitles.forEach((item, index) => {
             if(event.target == item) {
-                hideTabContent();
-                showTabContent(index);
+                // hideTabContent();
+                // showTabContent(index);
             }
         });
     }
